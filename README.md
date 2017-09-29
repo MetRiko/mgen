@@ -5,7 +5,7 @@ It is crated for Windows but you can edit first function (i.e. GetExePath(...)) 
 
 ## Getting started
 
-Just add mgen folder to PATH string and enjoy.
+Just add mgen folder to PATH string.
 
 ## User guide
 

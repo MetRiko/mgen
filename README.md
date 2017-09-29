@@ -57,8 +57,8 @@ Example of _adders_ file:
 -ID:\Dev\Libraries\SFML\2.4.2\include
 -LD:\Dev\Libraries\SFML\2.4.2\lib
 +Boost
--ID:/Dev\CORE\boost_1_65_1
--LD:/Dev\CORE\boost_1_65_1\stage\lib
+-ID:/Dev/CORE/boost_1_65_1
+-LD:/Dev/CORE/boost_1_65_1/stage/lib
 ```
 
 ## Commands examples

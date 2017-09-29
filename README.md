@@ -1,6 +1,7 @@
 # mgen - Simple makefile generator
 
 Makefile generator using some flags and "vars" to create makefile easier.
+It is crated for Windows but you can edit first function (i.e. GetExePath(...)) for properly work for another system.
 
 ## Getting started
 

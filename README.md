@@ -43,7 +43,7 @@ mgen help
 
 You can create _mgen_ file in the same place when the makefile will be created and put there any commands, separated by enters or spaces. When you run mgen with `-c` (clear commands) flag it will be ignore searching _mgen_ file.
 
-### Global _vars_ of commands
+### Global _vars_ with commands
 
 In directory with mgen just edit _adders_ file and put there some commands.
 Separate commands `+VAR_NAME` for create new vars.

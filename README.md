@@ -41,7 +41,7 @@ mgen help
 
 ### Commands in one file
 
-You can create _mgen_ file in the same place when the makefile will be created and put there any commands, separated by enters or spaces. When you run mgen with `-c` (clear commands) flag it will be ignore searching _mgen_ file.
+You can create _mgen_ file in the same place when the makefile will be created and put there any commands, separated by enters or spaces. When you run mgen with `-c` (clear commands) flag it will ignore searching _mgen_ file.
 
 ### Global _vars_ with commands
 

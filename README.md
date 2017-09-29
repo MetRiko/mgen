@@ -15,25 +15,19 @@ There are some flags that you can use:
 
 1. Create directory _Test_ with simple _any.cpp_ file.
 2. Go to path with _Test_ in console.
-3. Type **mgen** in console.
+3. Type `mgen` in console.
 
-Now put _any.cpp_ to any folder (e.g. _Test/Src_) and type **mgen** again.
+Now put _any.cpp_ to any folder (e.g. _Test/Src_) and type `mgen` again.
 It will find every single _.cpp_ file in folder with project.
 Works with multiple files and folders.
 
 ### Assign flags:
 
-Can have only one assigned value.
-```
--S -O -a -c
-```
+Can have only one assigned value: `-S -O -a -c`
 
 ### Multiple flags:
 
-Add more than one value to unique strings.
-```
--I -L -l -v -f
-```
+Add more than one value to unique strings: `-I -L -l -v -f`
 
 ### Help command
 
@@ -47,15 +41,16 @@ mgen help
 
 ### Commands in one file
 
-You can create _mgen_ file in the same place when the makefile will be created and put there any commands, separated by enters or spaces. When you run mgen with **-c** (clear commands) flag it will be ignore searching _mgen_ file.
+You can create _mgen_ file in the same place when the makefile will be created and put there any commands, separated by enters or spaces. When you run mgen with `-c` (clear commands) flag it will be ignore searching _mgen_ file.
 
 ### Global _vars_ of commands
 
 In directory with mgen just edit _adders_ file and put there some commands.
-Separate commands **+VAR_NAME** for create new vars.
-You can run all commands by typing **-v** flag with var name (e.g. **-vSFML**).
+Separate commands `+VAR_NAME` for create new vars.
+You can run all commands by typing `-v` flag with var name (e.g. `-vSFML`).
 
 Example of _adders_ file:
+
 ```
 +SFML
 -lsfml-graphics -lsfml-system -lsfml-window

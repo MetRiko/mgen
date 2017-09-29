@@ -72,4 +72,4 @@ mgen -ISFML/include -LSFML/lib -lsfml-window -lsfml-system -lsfml-
 
 ## Built With
 
-* [Boost](http://www.boost.org/) - for search directories easier
+* [Boost](http://www.boost.org/) - to search directories easier

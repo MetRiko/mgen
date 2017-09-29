@@ -1,0 +1,45 @@
+[ readme file for mgen ]
+
+Assign flags:
+-S		Main directory with sources (e.g. -Ssrc | default -S.).
+		This flag also triggers -I% (for -Ssrc %=src)
+		It will find recursively there every single .cpp file.
+-O 		Main directory with .o files (e.g. -Oobj | default: -O.).
+		Creates directory when it does not exist.
+-a 		Path for output (executable) file 
+		(e.g. -aout/game.exe | default: -arun.exe).
+-c 		When this flag is used mgen does not try to find "mgen" file.
+		You can create "mgen" file (when makefile will be create) 
+		and put there any instructions.		
+		Without -c flag mgen will be try to find "mgen" file 
+		and first of all it performs instructions within.
+		"mgen" file example:
+		-Ssrc -Oobj
+		-Iinclude
+==========================
+
+Multiple flags:
+-I		Adds new flag for include directories (e.g. -Iinclude).
+-L		Adds new flag for library directories (e.g. -LC:/Dev/SFML/lib).
+-l		Adds new library flag (e.g. -lsfml-window).
+-v		Triggers sequence of instructions (e.g. -vSFML).
+		Instructions are in "adders" file (look at ./mgen/adders).
+		"adders" file example:
+		+SFML
+		-LC:/Dev/SFML/lib
+		-IC:/Dev/SFML/include
+		-lsfml-window -lsfml-graphics -lsfml-system
+		+Comp
+		-Oobj
+		-Ssrc
+-f		Adds new compiler flag (e.g. -fstd=c++11 -fO2 -fWall)
+==========================
+
+Examples of commands:
+mgen
+mgen -Oobj
+mgen -c -Ssrc -Oobj
+mgen help
+mgen -c -vSFML
+mgen -c -Ssrc -Oobj -vBox2D -Iinclude -LC:/Dev/SFML/lib -lsfml-window -lsfml-graphics -agame.exe -fstd=c++11
+==========================

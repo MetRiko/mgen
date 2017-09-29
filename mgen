@@ -1,0 +1,6 @@
+-STest_1
+-OObj
+-ISFML/Include
+-LSFML/lib
+-llua
+-arun.exe

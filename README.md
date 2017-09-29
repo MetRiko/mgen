@@ -14,7 +14,6 @@ There are some flags that you can use:
 ### Assign flags:
 
 Can have only one assigned value.
-
 ```
 -S -O -a -c
 ```
@@ -22,7 +21,6 @@ Can have only one assigned value.
 ### Multiple flags:
 
 Add more than one value to unique strings.
-
 ```
 -I -L -l -v -f
 ```
@@ -30,11 +28,9 @@ Add more than one value to unique strings.
 ### Help command
 
 For more infomation about flags type...
-
 ```
 mgen help
 ```
-
 ...or read _help_ file in directory with mgen.
 
 ## Additional files
@@ -50,7 +46,6 @@ Separate commands *+VAR_NAME* for create new vars.
 You can run all commands by typing *-v* flag with var name (e.g. *-vSFML*).
 
 Example of _adders_ file:
-
 ```
 +SFML
 -lsfml-graphics -lsfml-system -lsfml-window
